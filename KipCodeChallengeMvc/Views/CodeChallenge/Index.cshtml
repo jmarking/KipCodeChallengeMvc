@@ -1,0 +1,52 @@
+﻿@model KipCodeChallengeMvc.Models.PersonModel
+
+@{
+    ViewData["Title"] = "Person Information";
+}
+
+<form asp-action="Index" class="col s12">
+    <div class="row">
+        <div id="index-main">
+            <div class="card medium teal lighten-5">
+                <div class="card-content">
+                    <span class="card-title">Personal Information</span>
+                    <div class="row">
+                        <div class="col s12 push-s1">
+                            <label asp-for="FirstName">First Name</label>
+                            @Html.DisplayFor(model => model.FirstName)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 push-s1">
+                            <label asp-for="LastName">Last Name</label>
+                            @Html.DisplayFor(model => model.LastName)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 push-s1">
+                            <label asp-for="Email">Email</label>
+                            @Html.DisplayFor(model => model.Email)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 push-s1">
+                            <label asp-for="DateOfBirth">Date of Birth</label>
+                            @Html.DisplayFor(model => model.DateOfBirth)
+                        </div>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <div class="row">
+                        <div class="input-field col s2 push-s1">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">
+                                Back
+                                <i class="material-icons left">arrow_back</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

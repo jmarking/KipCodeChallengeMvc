@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/styles/site.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <div class="brand-logo left">
+                Kip Code Challenge MVC
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+    <footer class="page-footer teal lighten-2">
+        <div class="footer-copyright">
+            <div class="container">
+                © @DateTime.Now.Year Jonathan M. Marking
+            </div>
+        </div>
+    </footer>
+
+    @*<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>*@
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
