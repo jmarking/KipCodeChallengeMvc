@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KipCodeChallengeMvc", "KipCodeChallengeMvc\KipCodeChallengeMvc.csproj", "{294E55D4-F460-45B8-A047-FA4A44BBEB9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcDemo", "MvcDemo\MvcDemo.csproj", "{294E55D4-F460-45B8-A047-FA4A44BBEB9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KipCodeChallengeMvcPerson", "KipCodeChallengeMvcServices\KipCodeChallengeMvcPerson.csproj", "{F2FAA392-B1C0-45C5-8E15-54CAF5D7BF8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcDemoService", "MvcDemoService\MvcDemoService.csproj", "{F2FAA392-B1C0-45C5-8E15-54CAF5D7BF8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

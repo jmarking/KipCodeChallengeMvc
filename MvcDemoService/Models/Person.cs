@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace KipCodeChallengeMvcPerson.Models
+namespace MvcDemoService.Models
 {
     public class Person
     {

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KipCodeChallengeMvcServices\KipCodeChallengeMvcPerson.csproj" />
+    <ProjectReference Include="..\MvcDemoService\MvcDemoService.csproj" />
   </ItemGroup>
 
 </Project>

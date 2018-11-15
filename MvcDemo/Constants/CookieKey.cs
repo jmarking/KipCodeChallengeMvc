@@ -1,4 +1,4 @@
-﻿namespace KipCodeChallengeMvc.Constants
+﻿namespace MvcDemo.Constants
 {
     public static class CookieKey
     {

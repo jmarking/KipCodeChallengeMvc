@@ -1,10 +1,10 @@
-﻿using KipCodeChallengeMvcServices.Services;
+﻿using MvcDemoService.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace KipCodeChallengeMvc
+namespace MvcDemo
 {
     public class Startup
     {
@@ -37,7 +37,7 @@ namespace KipCodeChallengeMvc
             {
                 route.MapRoute(
                     name: "default",
-                    template: "{controller=CodeChallenge}/{action=Edit}");
+                    template: "{controller=MvcDemo}/{action=Edit}");
             });
         }
     }

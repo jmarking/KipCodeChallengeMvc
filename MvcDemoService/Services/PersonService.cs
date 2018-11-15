@@ -1,8 +1,8 @@
-﻿using KipCodeChallengeMvcPerson.Models;
+﻿using MvcDemoService.Models;
 using Microsoft.Extensions.Caching.Memory;
 using System;
 
-namespace KipCodeChallengeMvcServices.Services
+namespace MvcDemoService.Services
 {
     public interface IPersonService
     {

@@ -1,8 +1,8 @@
-﻿using KipCodeChallengeMvcPerson.Models;
+﻿using MvcDemoService.Models;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace KipCodeChallengeMvc.Models
+namespace MvcDemo.Models
 {
     public class PersonModel
     {

@@ -1,18 +1,18 @@
-﻿using KipCodeChallengeMvc.Constants;
-using KipCodeChallengeMvc.Models;
-using KipCodeChallengeMvcPerson.Models;
-using KipCodeChallengeMvcServices.Services;
+﻿using MvcDemo.Constants;
+using MvcDemo.Models;
+using MvcDemoService.Models;
+using MvcDemoService.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace KipCodeChallengeMvc.Controllers
+namespace MvcDemo.Controllers
 {
-    public class CodeChallengeController : Controller
+    public class MvcDemoController : Controller
     {
         private readonly IPersonService _personService;
 
-        public CodeChallengeController(IPersonService personService)
+        public MvcDemoController(IPersonService personService)
         {
             _personService = personService;
         }
