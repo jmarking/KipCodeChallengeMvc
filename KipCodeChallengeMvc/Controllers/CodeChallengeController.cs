@@ -2,6 +2,7 @@
 using KipCodeChallengeMvc.Models;
 using KipCodeChallengeMvcPerson.Models;
 using KipCodeChallengeMvcServices.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -48,7 +49,10 @@ namespace KipCodeChallengeMvc.Controllers
                 if (cacheKey == null)
                 {
                     cacheKey = $"{person.FirstName}{person.LastName}-{DateTime.Now}";
-                    Response.Cookies.Append(CookieKey.KipMvcCodeChallenge, cacheKey);
+                    Response.Cookies.Append(CookieKey.KipMvcCodeChallenge, cacheKey, new CookieOptions
+                    {
+                        Expires = DateTimeOffset.Now.AddDays(7)
+                    });
                 }
 
                 _personService.SavePerson(cacheKey, (Person)person);
